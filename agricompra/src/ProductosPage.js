@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Productos.css';
 
-function Productos() {
+function ProductosPage() {
   const [productos, setProductos] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('tcp:agricompra.database.windows.net/api/productos,1433')
+    fetch('tcp:agricompra.database.windows.net/api/productos')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -22,7 +22,7 @@ function Productos() {
 
   return (
     <div>
-      <h2>Productos</h2>
+      <h2>Todos los Productos</h2>
       {error && <p className="error">{error}</p>}
       <div className="product-grid">
         {productos.map(producto => (
@@ -34,9 +34,8 @@ function Productos() {
           </div>
         ))}
       </div>
-      <a href="/productos" className="view-all-button">Ver todos los productos</a>
     </div>
   );
 }
 
-export default Productos;
+export default ProductosPage;
