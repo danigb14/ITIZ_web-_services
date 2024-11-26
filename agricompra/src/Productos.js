@@ -2,7 +2,23 @@ import React, { useEffect, useState } from 'react';
 import './Productos.css';
 
 function Productos() {
-  const [productos, setProductos] = useState([]);
+  const [productos, setProductos] = useState([
+    {
+        "nombre": "Producto 1",
+        "precio": 10.99,
+        "imagen": "imagen1.jpg"
+    },
+    {
+        "nombre": "Producto 2",
+        "precio": 15.49,
+        "imagen": "imagen2.jpg"
+    },
+    {
+        "nombre": "Producto 3",
+        "precio": 7.99,
+        "imagen": "imagen3.jpg"
+    }
+  ]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
