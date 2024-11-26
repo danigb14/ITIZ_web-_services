@@ -5,72 +5,72 @@ function ProductosPage() {
   const [productos] = useState([
     {
       id: 1,
-      nombre: "Producto 1",
-      descripcion: "Descripción del Producto 1",
-      precio: 10.99,
+      nombre: "Herramienta de mano",
+      descripcion: "Herramienta de mano resistente y versatil, ideal para uso en jardineria o reparaciones ligeras",
+      precio: 150.00,
       imagen: "imagen1.jpg"
     },
     {
       id: 2,
-      nombre: "Producto 2",
-      descripcion: "Descripción del Producto 2",
-      precio: 15.49,
+      nombre: "Semillas",
+      descripcion: "Paquete de semillas seleccionadas, ideal para siembra y jardineria",
+      precio: 210.00,
       imagen: "imagen2.jpg"
     },
     {
       id: 3,
-      nombre: "Producto 3",
-      descripcion: "Descripción del Producto 3",
-      precio: 7.99,
+      nombre: "Azadon",
+      descripcion: "Azadon resistente y de alta calidad, ideal para labores agricolas y jardineria ",
+      precio: 245.00,
       imagen: "imagen3.jpg"
     },
     {
       id: 4,
-      nombre: "Producto 4",
-      descripcion: "Descripción del Producto 4",
-      precio: 12.99,
+      nombre: "Variedad de semillas",
+      descripcion: "Paquete de variedad de semillas, ideal para cultivos y jardines diversos",
+      precio: 199.00,
       imagen: "imagen4.jpg"
     },
     {
       id: 5,
-      nombre: "Producto 5",
-      descripcion: "Descripción del Producto 5",
-      precio: 9.99,
+      nombre: "Regadera de plantas",
+      descripcion: "Regadera ergonomica y duradera, ideal para mantener tus plantas bien hidratadas",
+      precio: 300.00,
       imagen: "imagen5.jpg"
     },
     {
       id: 6,
-      nombre: "Producto 6",
-      descripcion: "Descripción del Producto 6",
-      precio: 14.99,
+      nombre: "Pesticidas naturales",
+      descripcion: "Solucion ecologica para el control de plagas, ideal para proteger cultivos de manera sostenible",
+      precio: 180.00,
       imagen: "imagen6.jpg"
     },
     {
       id: 7,
-      nombre: "Producto 7",
-      descripcion: "Descripción del Producto 7",
-      precio: 8.99,
+      nombre: "Semillas de girasol",
+      descripcion: "Semillas de girasol de alta calidad, ideales para el cultivo o consumo como snak saludable",
+      precio: 80.00,
       imagen: "imagen7.jpg"
     },
     {
       id: 8,
-      nombre: "Producto 8",
-      descripcion: "Descripción del Producto 8",
-      precio: 11.99,
+      nombre: "Tigeras de cosecha",
+      descripcion: "Tigeras ergonomicas para cosecha,ideales para cortes precisos en cultivo y jardineria",
+      precio: 249.00,
       imagen: "imagen8.jpg"
     },
     {
       id: 9,
-      nombre: "Producto 9",
-      descripcion: "Descripción del Producto 9",
-      precio: 13.99,
+      nombre: "Semillas de Alfalfa",
+      descripcion: "Semillas de Alfalfa de alta calidad para siembra",
+      precio: 299.00,
       imagen: "imagen9.jpg"
     },
     {
       id: 10,
-      nombre: "Producto 10",
-      descripcion: "Descripción del Producto 10",
-      precio: 16.99,
+      nombre: "Costales",
+      descripcion: "Costales duraderos y reutilizables ideales para almacenamiento y transporte de productos agricolas",
+      precio: 7.27,
       imagen: "imagen10.jpg"
     },
     {
@@ -82,30 +82,30 @@ function ProductosPage() {
     },
     {
       id: 12,
-      nombre: "Producto 12",
-      descripcion: "Descripción del Producto 12",
-      precio: 5.99,
+      nombre: "Semillas de hierbabuena",
+      descripcion: "Semillas de hierbabuena ideales para cultivar en casa o en el jardin. Perfectas para infusiones y platillos",
+      precio: 435.00,
       imagen: "imagen12.jpg"
     },
     {
       id: 13,
-      nombre: "Producto 13",
-      descripcion: "Descripción del Producto 13",
-      precio: 4.99,
+      nombre: "Semillas de Cebollin",
+      descripcion: "Semillas de cebollin frescas, perfectas para cultivar en casa o en el jardin, ideal para agregar sabor a ensaldas y platillos.",
+      precio: 155.00,
       imagen: "imagen13.jpg"
     },
     {
       id: 14,
-      nombre: "Producto 14",
-      descripcion: "Descripción del Producto 14",
-      precio: 3.99,
+      nombre: "Semillas de cilantro",
+      descripcion: "Semillas de cilantro de alta calidad, ideales para cultivar en huertos caseros y/o jardines.",
+      precio: 250.00,
       imagen: "imagen14.jpg"
     },
     {
       id: 15,
-      nombre: "Producto 15",
-      descripcion: "Descripción del Producto 15",
-      precio: 2.99,
+      nombre: "Deshierbador",
+      descripcion: "Deshierbador de alta calidad, ideal para remover malesa de jardines y huertos de manera eficiente y comoda",
+      precio: 235.00,
       imagen: "imagen15.jpg"
     }
   ]);
