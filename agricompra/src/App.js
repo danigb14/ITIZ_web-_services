@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Carousel />
       <div className="product-list">
+        {/*<ProductosL />*/}
         <Productos />
       </div>
     </div>
