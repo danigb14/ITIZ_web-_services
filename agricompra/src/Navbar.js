@@ -11,7 +11,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="navbar-right">
-        <Link to="/productos">Productos</Link>
+                <Link to="/Productos">Productos</Link>
         <a href="#carrito">Carrito</a>
         <a href="#inicio-sesion">Inicio de sesión</a>
       </div>
