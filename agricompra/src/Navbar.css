@@ -12,10 +12,32 @@
   font-weight: bold;
 }
 
-.navbar-right a {
-  margin-left: 1rem;
+.navbar-left a {
   text-decoration: none;
   color: #007bff;
+  font-size: 1.5rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right a {
+  margin-left: 2rem; /* Aumentar el espacio entre los enlaces */
+  text-decoration: none;
+  color: #007bff;
+}
+
+.navbar-right .google-login {
+  margin-left: 2rem; /* Aumentar el espacio antes del botón de Google */
+}
+
+.user-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
 .navbar-right a:hover {
