@@ -2,27 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './Productos.css';
 
 function Productos() {
-  const [productos, setProductos] = useState([
-    {
-        "nombre": "Producto 1",
-        "precio": 10.99,
-        "imagen": "imagen1.jpg"
-    },
-    {
-        "nombre": "Producto 2",
-        "precio": 15.49,
-        "imagen": "imagen2.jpg"
-    },
-    {
-        "nombre": "Producto 3",
-        "precio": 7.99,
-        "imagen": "imagen3.jpg"
-    }
-  ]);
+  const [productos, setProductos] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('tcp:agricompra.database.windows.net/api/productos,1433')
+    // Cambiar la URL para apuntar a la ruta correcta en el servidor Express
+    fetch('http://localhost:3000/api/productos')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -42,11 +27,11 @@ function Productos() {
       {error && <p className="error">{error}</p>}
       <div className="product-grid">
         {productos.map(producto => (
-          <div className="product-card" key={producto.id}>
-            <img src={producto.imagen} alt={producto.nombre} />
-            <h2>{producto.nombre}</h2>
-            <p>{producto.descripcion}</p>
-            <p>Precio: ${producto.precio}</p>
+          <div className="product-card" key={producto.ID}>
+            <img src={producto.ImagenURL} alt={producto.Nombre} />
+            <h2>{producto.Nombre}</h2>
+            <p>Descripción: {producto.Descripcion}</p>
+            <p>Precio: ${producto.Precio}</p>
           </div>
         ))}
       </div>
