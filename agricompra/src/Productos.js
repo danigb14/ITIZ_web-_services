@@ -38,7 +38,7 @@ function Productos() {
           </div>
         ))}
       </div>
-      <a href="/productos" className="view-all-button">Ver todos los productos</a>
+      <a href="/ProductosPage" className="view-all-button">Ver todos los productos</a>
     </div>
   );
 }
