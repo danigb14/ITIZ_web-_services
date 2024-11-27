@@ -40,6 +40,7 @@ function Navbar() {
             onSuccess={onSuccess}
             onFailure={onFailure}
             cookiePolicy={'single_host_origin'}
+            className="custom-google-button" // Aplica la clase personalizada
           />
         )}
       </div>

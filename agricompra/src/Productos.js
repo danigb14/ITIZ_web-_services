@@ -14,7 +14,10 @@ function Productos() {
         }
         return response.json();
       })
-      .then(data => setProductos(data))
+      .then(data => {
+        const shuffled = data.sort(() => 0.5 - Math.random());
+        setProductos(shuffled.slice(0, 6));
+      })
       .catch(error => {
         console.error('Error fetching data:', error);
         setError(error.message);

@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Carousel from './Carousel';
-import ProductosL from './ProductosL';
 import Productos from './Productos';
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
     <div className="App">
       <Carousel />
       <div className="product-list">
-        {/*<ProductosL />*/}
         <Productos />
       </div>
     </div>
